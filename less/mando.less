@@ -1,0 +1,235 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+@-webkit-keyframes move {
+    20% {
+        -webkit-transform: translatex(25px);
+    }
+
+    40% {
+        -webkit-transform: translatex(-25px);
+    }
+
+    60% {
+        -webkit-transform: translatex(25px);
+    }
+
+    80% {
+        -webkit-transform: translatex(-25px);
+    }
+
+    100% {
+        -webkit-transform: translatex(0px);
+    }
+}
+@font-face {
+		font-family: '04b30';
+		src: url('../fonts/04b30.eot');
+		src: url('../fonts/04b30.eot?#iefix') format('embedded-opentype'),
+				 url('../fonts/04b30.woff') format('woff'),
+				 url('../fonts/04b30.ttf') format('truetype'),
+				 url('../fonts/04b30.svg#04b30') format('svg');
+		font-weight: normal;
+		font-style: normal;
+}
+				@font-face {
+		font-family: 'PressStart2P';
+		src: url('../fonts/pressstart2p.eot');
+		src: url('../fonts/pressstart2p.eot?#iefix') format('embedded-opentype'),
+				 url('../fonts/pressstart2p.woff') format('woff'),
+				 url('../fonts/pressstart2p.ttf') format('truetype'),
+				 url('../fonts/pressstart2p.svg#pressstart2p') format('svg');
+		font-weight: normal;
+		font-style: normal;
+}
+
+html {
+	background: #820303;
+	color: #fff;
+}
+
+.btn {
+	background: #b0221a;
+	border-radius: 50%;
+	border: 3px solid #9f221a;
+	outline: 0;
+	box-shadow: 0 0 20px rgba(0,0,0,.9), inset 0 3px 1px 1px #b98b88, inset 0 -5px 30px #c27873, inset 0 10px 50px rgba(0,0,0,.9);
+	-webkit-transform: rotate(15deg);
+	-webkit-transition: all .2s;
+	font-size: 22px;
+	font-family: 'PressStart2P';
+	color: rgba(0,0,0,.05);
+	text-shadow: -1px -1px rgba(0,0,0,.5);
+	text-align: center;
+	&:active {
+		box-shadow: 0 0 20px rgba(0,0,0,.5), inset 0 3px 1px 1px #b98b88, inset 0 -5px 30px #c27873, inset 0 30px 50px rgba(0,0,0,.5);
+	}
+}
+#border {
+	width: 800px;
+	background: #ededed;
+	height: 440px;
+	border-top: 10px solid #fff;
+	border-radius: 20px;
+	margin: auto;
+	padding: 60px 40px;
+
+	position: absolute;
+	top: 50%;
+	margin-top: -285px;
+	left: 50%;
+	margin-left: -440px;
+
+	box-shadow: 0 0 50px rgba(255,255,255,.8);
+
+	&.move {
+		-webkit-animation: move .1s linear;
+	}
+
+	#panel {
+		background: #343434;background:
+		rgb(125,126,125);
+		background: rgb(91,91,91);
+		background: -moz-linear-gradient(top,  rgba(91,91,91,1) 0%, rgba(43,43,43,1) 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(91,91,91,1)), color-stop(100%,rgba(43,43,43,1)));
+		background: -webkit-linear-gradient(top,  rgba(91,91,91,1) 0%,rgba(43,43,43,1) 100%);
+		background: -o-linear-gradient(top,  rgba(91,91,91,1) 0%,rgba(43,43,43,1) 100%);
+		background: -ms-linear-gradient(top,  rgba(91,91,91,1) 0%,rgba(43,43,43,1) 100%);
+		background: linear-gradient(to bottom,  rgba(91,91,91,1) 0%,rgba(43,43,43,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b5b5b', endColorstr='#2b2b2b',GradientType=0 );
+
+		border: 10px solid #000;
+		height: 420px;
+
+		#input_code {
+			height: 420px;
+			label {
+				width: 600px;
+				height: 60px;
+				font-family: 'PressStart2P';
+				color: #fff;
+				text-align: center;
+				font-size: 20px;
+				display: block;
+				margin: auto;
+				margin-top: 60px;
+			}
+			#code {
+				width: 200px;
+				height: 60px;
+				background: #c7c7c7;
+				border: 7px solid #dbdbdb;
+				box-shadow: inset 0 0 20px rgba(0,0,0,.4);
+				border-radius: 10px;
+				font-family: '04b30';
+				color: #303030;
+				text-align: center;
+				font-size: 32px;
+				display: block;
+				margin: auto;
+				margin-top: 30px;
+			}
+			#asosciar {
+				width: 100px;
+				height: 100px;
+				display: block;
+				margin: auto;
+				margin-top: 30px;
+				.btn;
+			}
+		}
+		#mando {
+			display: none;
+			height: 420px;
+
+			#player_n {
+				font-size: 24px;
+				text-align: center;
+				color: #fff;
+				font-family: 'PressStart2P';
+				width: 400px;
+				top: 100px;
+				margin-left: -200px;
+				left: 50%;
+				position: absolute;
+			}
+			#palancas {
+				margin-top: 136px;
+				background: url('../img/bg_mando_palanca.png');
+				background-size: cover;
+				width: 250px;
+				height: 250px;
+
+				button {
+					background: none;
+					width: 50px;
+					height: 50px;
+					border: 0;
+					position: absolute;
+					outline: 0;
+
+					&:active {
+						background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 46%, rgba(255,255,255,0) 100%);
+						background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(46%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,0)));
+						background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 46%,rgba(255,255,255,0) 100%);
+						background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 46%,rgba(255,255,255,0) 100%);
+						background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 46%,rgba(255,255,255,0) 100%);
+						background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 46%,rgba(255,255,255,0) 100%);
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 )
+					}
+				}
+				#up {
+					margin-top: 15px;
+					margin-left: 100px;
+				}
+				#right {
+					margin-top: 90px;
+					margin-left: 176px;
+				}
+				#left {
+					margin-top: 90px;
+					margin-left: 26px;
+				}
+				#down {
+					margin-top: 164px;
+					margin-left: 100px;
+				}
+			}
+			#buttons {
+				display: block;
+				overflow: hidden;
+				position: absolute;
+				top: 180px;
+				left: 640px;
+				-webkit-transform-origin: 0 0;
+				-webkit-transform: rotate(45deg);
+			}
+			.content_button {
+				width: 100px;
+				margin: 10px;
+				float: left;
+				label {
+					display: block;
+					text-align: center;
+					color: #fff;
+					font-size: 12px;
+					padding: 10px;
+					font-family: 'PressStart2P';
+				}
+				div {
+					width: 100px;
+					height: 100px;
+					background: #c8c8c8;
+
+					button {
+						width: 80px;
+						height: 80px;
+						margin: 10px;
+						.btn;
+					}
+				}
+			}
+		}
+	}
+}

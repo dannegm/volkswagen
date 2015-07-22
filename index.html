@@ -1,0 +1,38 @@
+<!doctype html>
+<!-- [ By Dannegm (c) 2014 para AMB Multimedia - http://dannegm.pro ] -->
+<html lang="es-MX">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=800, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="stylesheet/less" href="less/index.less" />
+
+	<title>Volkswagen</title>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/less.min.js"></script>
+	<script src="js/iioEngine.min.js"></script>
+	<script src="http://dannegm.pro:3124/socket.io/socket.io.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<body>
+<div id="warp">
+
+	<section id="home">
+		<button id="start">Iniciar</button>
+	</section>
+	<section id="seleccionar">
+		<output id="player1_code"></output>
+		<output id="player2_code"></output>
+	</section>
+
+	<section id="game_canvas">
+		<canvas id="player1_canvas" width="1280px" height="720px"></canvas>
+		<header>
+			<output id="counter_time">1:59</output>
+		</header>
+	</section>
+
+</div>
+</body>
+</html>

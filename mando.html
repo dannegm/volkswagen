@@ -1,0 +1,52 @@
+<!doctype html>
+<!-- [ By Dannegm (c) 2014 para AMB Multimedia - http://dannegm.pro ] -->
+<html lang="es-MX">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=960, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="stylesheet/less" href="less/mando.less" />
+
+	<title>Volkswagen</title>
+</head>
+<body>
+<div id="border">
+	<div id="panel">
+		<section id="input_code">
+			<label>Introduce el código</label>
+			<input id="code" maxlength="4" />
+			<button id="asosciar"></button>
+		</section>
+		<section id="mando">
+			<span id="player_n">JUGADOR</span>
+			<div id="palancas">
+				<button id="up"></button>
+				<button id="left"></button>
+				<button id="right"></button>
+				<button id="down"></button>
+			</div>
+			<div id="buttons">
+				<div class="content_button">
+					<label>FRENAR</label>
+					<div>
+						<button id="a"></button>
+					</div>
+				</div>
+				<div class="content_button">
+					<label>ACELERAR</label>
+					<div>
+						<button id="b"></button>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+</div>
+	
+<script src="js/jquery.min.js"></script>
+<script src="js/less.min.js"></script>
+<script src="http://dannegm.pro:3124/socket.io/socket.io.js"></script>
+<script src="js/mando.js"></script>
+</body>
+</html>
